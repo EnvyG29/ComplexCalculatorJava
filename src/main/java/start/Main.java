@@ -1,25 +1,31 @@
 package start;
-
-
-import start.math087.ComplexNumber;
-import start.math087.Math087;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
-        ComplexNumber num1 = new ComplexNumber(7,3);
-        ComplexNumber num2 = new ComplexNumber(6,2);
-        Math087 math087 = new Math087();
-        System.out.println(num1);
-        System.out.println(num2);
-        System.out.println();
-        System.out.println(math087.addition(num1, num2));
-        System.out.println(math087.subtraction(num1, num2));
-        System.out.println(math087.multiplication(num1, num2));
-        System.out.println(math087.division(num1, num2));
+        System.out.println("""
+                Калькулятор комплексных чисел(beta).
+                Как пользоваться
+                Выберите одну из доступных команд
+                a -> addition(сложение)
+                s -> subtraction(вычитание)
+                m -> multiplication(умножение)
+                d -> division(деление)
+                stop -> завершить программу
+              
+                Комплексные числа можно вводить в формате
+                7.0+3.0i
+                7.0-3.0i
+                -7.0+3.0i
+                -7-3.0i
+                7.0+3i
+                7+3.0i
+                7+3i
+                -7.0
+                3.0i
+                7
+                -3i
+                В случае ввода числа в ином виде программа может его не принять, или произвести неверный расчет""");
 
-
-
-
+        ClientCode code = new ClientCode();
+        code.start();
     }
 }

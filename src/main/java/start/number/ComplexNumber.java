@@ -1,20 +1,12 @@
-package start.math087;
+package start.number;
 
-public class ComplexNumber{
-    private final double real;
-    private final double imaginary;
+public final class ComplexNumber {
+    private  double real;
+    private  double imaginary;
 
     public ComplexNumber(double real, double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
-    }
-
-    public double getReal() {
-        return real;
-    }
-
-    public double getImaginary() {
-        return imaginary;
     }
 
     @Override
@@ -25,4 +17,13 @@ public class ComplexNumber{
             return real + String.valueOf(imaginary) + "i";
         }
     }
+
+    public double real() {
+        return real;
+    }
+
+    public double imaginary() {
+        return imaginary;
+    }
+
 }

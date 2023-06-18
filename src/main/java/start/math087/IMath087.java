@@ -1,5 +1,7 @@
 package start.math087;
 
+import start.number.ComplexNumber;
+
 public interface IMath087 {
     ComplexNumber addition(ComplexNumber num1, ComplexNumber num2);
 
